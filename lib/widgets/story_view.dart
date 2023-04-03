@@ -111,6 +111,7 @@ class StoryItem {
     Key? key,
     BoxFit imageFit = BoxFit.fitWidth,
     String? caption,
+    String? music,
     bool shown = false,
     Map<String, dynamic>? requestHeaders,
     Duration? duration,
