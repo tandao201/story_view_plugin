@@ -33,6 +33,7 @@ class StoryItem {
   /// story item.
   bool shown;
   String music;
+  String createdTime;
 
   /// The page content
   final Widget view;
@@ -41,6 +42,7 @@ class StoryItem {
     required this.duration,
     this.shown = false,
     this.music = "",
+    this.createdTime = "",
   });
 
   /// Short hand to create text-only page.
@@ -114,6 +116,7 @@ class StoryItem {
     BoxFit imageFit = BoxFit.fitWidth,
     String? caption,
     String? music,
+    String? createdTime,
     bool shown = false,
     Map<String, dynamic>? requestHeaders,
     Duration? duration,
@@ -162,6 +165,7 @@ class StoryItem {
       shown: shown,
       duration: duration ?? Duration(seconds: 3),
       music: music ?? "",
+      createdTime: createdTime ?? "",
     );
   }
 
