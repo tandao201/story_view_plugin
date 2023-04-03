@@ -118,7 +118,6 @@ class StoryItem {
     Map<String, dynamic>? requestHeaders,
     Duration? duration,
   }) {
-    this.music = music ?? "";
     return StoryItem(
       Container(
         key: key,
@@ -162,6 +161,7 @@ class StoryItem {
       ),
       shown: shown,
       duration: duration ?? Duration(seconds: 3),
+      music: music ?? "",
     );
   }
 
