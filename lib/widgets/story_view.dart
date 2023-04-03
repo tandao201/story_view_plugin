@@ -32,6 +32,7 @@ class StoryItem {
   /// is because the next item to be displayed is taken by the last unshown
   /// story item.
   bool shown;
+  String music;
 
   /// The page content
   final Widget view;
@@ -39,6 +40,7 @@ class StoryItem {
     this.view, {
     required this.duration,
     this.shown = false,
+    this.music = "",
   });
 
   /// Short hand to create text-only page.
@@ -116,6 +118,7 @@ class StoryItem {
     Map<String, dynamic>? requestHeaders,
     Duration? duration,
   }) {
+    this.music = music ?? "";
     return StoryItem(
       Container(
         key: key,
