@@ -35,6 +35,7 @@ class StoryItem {
   String music;
   String createdTime;
   int? id;
+  List<dynamic> usersView;
 
   /// The page content
   final Widget view;
@@ -118,6 +119,7 @@ class StoryItem {
     String? caption,
     String? music,
     int? id,
+    List<dynamic> usersView,
     String? createdTime,
     bool shown = false,
     Map<String, dynamic>? requestHeaders,
@@ -169,6 +171,7 @@ class StoryItem {
       music: music ?? "",
       createdTime: createdTime ?? "",
       id: id ?? -1,
+      usersView: usersView ?? [],
     );
   }
 
