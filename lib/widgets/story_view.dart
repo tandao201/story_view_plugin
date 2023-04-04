@@ -46,7 +46,7 @@ class StoryItem {
     this.music = "",
     this.createdTime = "",
     this.id = -1,
-    this.usersView = [''],
+    this.usersView = const [],
   });
 
   /// Short hand to create text-only page.
@@ -173,7 +173,7 @@ class StoryItem {
       music: music ?? "",
       createdTime: createdTime ?? "",
       id: id ?? -1,
-      usersView: usersView ?? ['']
+      usersView: usersView ?? []
     );
   }
 
