@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:math';
 import 'dart:ui';
-
+import 'dart:core';
 import 'package:collection/collection.dart' show IterableExtension;
 import 'package:flutter/material.dart';
 
@@ -35,7 +35,7 @@ class StoryItem {
   String music;
   String createdTime;
   int? id;
-  List<dynamic> usersView;
+  List<dynamic>? usersView;
 
   /// The page content
   final Widget view;
