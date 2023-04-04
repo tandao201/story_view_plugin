@@ -34,6 +34,7 @@ class StoryItem {
   bool shown;
   String music;
   String createdTime;
+  int? id;
 
   /// The page content
   final Widget view;
@@ -116,6 +117,7 @@ class StoryItem {
     BoxFit imageFit = BoxFit.fitWidth,
     String? caption,
     String? music,
+    int? id,
     String? createdTime,
     bool shown = false,
     Map<String, dynamic>? requestHeaders,
@@ -166,6 +168,7 @@ class StoryItem {
       duration: duration ?? Duration(seconds: 3),
       music: music ?? "",
       createdTime: createdTime ?? "",
+      id: id ?? -1,
     );
   }
 
