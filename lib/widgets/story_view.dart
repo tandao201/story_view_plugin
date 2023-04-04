@@ -119,7 +119,7 @@ class StoryItem {
     String? caption,
     String? music,
     int? id,
-    List<dynamic> usersView,
+    List<dynamic>? usersView,
     String? createdTime,
     bool shown = false,
     Map<String, dynamic>? requestHeaders,
