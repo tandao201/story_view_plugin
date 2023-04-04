@@ -35,7 +35,6 @@ class StoryItem {
   String music;
   String createdTime;
   int id;
-  late List<dynamic> usersView;
 
   /// The page content
   final Widget view;
@@ -172,7 +171,6 @@ class StoryItem {
       music: music ?? "",
       createdTime: createdTime ?? "",
       id: id ?? -1,
-      usersView: usersView ?? [],
     );
   }
 
