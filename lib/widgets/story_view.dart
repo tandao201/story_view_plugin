@@ -46,7 +46,7 @@ class StoryItem {
     this.music = "",
     this.createdTime = "",
     this.id = -1,
-    this.usersView = [],
+    this.usersView = <dynamic>[],
   });
 
   /// Short hand to create text-only page.
