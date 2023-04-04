@@ -35,6 +35,7 @@ class StoryItem {
   String music;
   String createdTime;
   int id;
+  List<dynamic> usersView;
 
   /// The page content
   final Widget view;
@@ -45,6 +46,7 @@ class StoryItem {
     this.music = "",
     this.createdTime = "",
     this.id = -1,
+    this.usersView = [''],
   });
 
   /// Short hand to create text-only page.
@@ -171,6 +173,7 @@ class StoryItem {
       music: music ?? "",
       createdTime: createdTime ?? "",
       id: id ?? -1,
+      usersView: usersView ?? ['']
     );
   }
 
